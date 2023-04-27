@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* background */
+    --bg-primary: #0d0f0f;
+    --bg-secondary: #1d1d1d;
+    --bg-tertiary: #363535;
+    --bg-header: #030303;
+
+
+    /* text */
+    --text-primary: #8e8e8e;
+    --text-secondary: #e7e7e7;
+
+    /* accent */
+    --accent: #460068;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Header */
+
+header {
+    background: var(--bg-header);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    height: 70%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    gap: 50px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: var(--text-primary);
+    transition: 200ms
+}
+
+.navbar-list a:hover {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.navbar-list li:first-child>a {
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+/* searchbar */
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.search {
+    border-radius: 1rem;
+    background-color: var(--bg-secondary);
+    height: 35px;
+    width: 300px;
+    transition: 300ms;
+}
+
+.search:hover {
+    height: 40px;
+    width: 310px;
+    background-color: var(--bg-tertiary);
+}
+
+.search:has(.search-bar:focus) {
+    height: 40px;
+    width: 310px;
+    background-color: var(--bg-tertiary);
+}
+
+.search-bar {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--text-secondary);
+}
+
+.search-go {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-go-img {
+    height: 20px;
+    transition: 300ms
+}
+
+.search-go-img:hover {
+    height: 25px;
+}
+
+.cart {
+    height: 30px;
+    padding: 0 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.cart:hover {
+    height: 40px;
+}
