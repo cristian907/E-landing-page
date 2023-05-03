@@ -138,3 +138,102 @@ header {
 .cart:hover {
     height: 40px;
 }
+
+/* main */
+
+main {
+    background-color: var(--bg-primary);
+    width: 100%;
+}
+
+/* hero */
+
+#hero {
+    margin-top: 80px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: var(--bg-secondary);
+    width: 100%;
+}
+
+.hero img {
+    width: 30%;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-text {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 60%;
+}
+
+.hero-text h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    font-size: 17px;
+}
+
+.hero-info a {
+    color: var(--text-secondary);
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 100ms;
+}
+
+.hero-info a:hover {
+    background-color: #ede2ff;
+    color: var(--accent);
+    border: 3px solid var(--accent);
+}
+
+/* about */
+
+#about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    padding: 20px 0;
+    color: var(--text-primary);
+    max-width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+}
